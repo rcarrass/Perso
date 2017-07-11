@@ -1,3 +1,6 @@
-rm -ri ex*/a.out
-rm -ri ex*/.*
+rm -rfi */a.out
+rm -rfi */.*
+rm -rfi */main.c
+rm -rfi main.c
+cat */* | grep "main"
 norminette -R CheckForbiddenSourceHeader
